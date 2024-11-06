@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-ExtralightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-Extralight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-SemiboldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-BoldItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grtsk Giga';
+  src: url('@/styles/fonts/GrtskGiga-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}

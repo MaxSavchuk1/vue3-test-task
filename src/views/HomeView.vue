@@ -1,7 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    hello world
-  </div>
+  <div>FULL-CYCLE EVENT AGENCY</div>
 </template>

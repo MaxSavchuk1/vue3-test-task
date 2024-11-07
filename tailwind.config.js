@@ -1,11 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  darkMode: false,
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {}
-  },
-  variants: {
     extend: {
       colors: {
         gray: {
@@ -27,6 +23,9 @@ export default {
         '2xl': '1440px'
       }
     }
+  },
+  variants: {
+    extend: {}
   },
   plugins: []
 }

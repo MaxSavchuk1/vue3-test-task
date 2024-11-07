@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="flex justify-center items-center flex-col gap-2.5">
+  <div class="flex justify-center items-center flex-col gap-2.5 m-auto">
     <h2 class="text-8xl">404</h2>
 
     <span>Page doesn't exist</span>

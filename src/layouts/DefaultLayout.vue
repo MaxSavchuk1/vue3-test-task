@@ -1,7 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main>
+  <AppHeader />
+  <main class="h-full">
     <slot />
   </main>
 </template>

@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header class="header">
+  <div class="header">
     <LangSwitch />
 
     <div class="mx-auto relative w-12 xs:w-16 xl:w-20 h-full">
@@ -10,7 +10,7 @@
     </div>
 
     <MenuButton class="h-2.5 sm:hidden cursor-pointer" />
-  </header>
+  </div>
 </template>
 
 <style lang="postcss" scoped>

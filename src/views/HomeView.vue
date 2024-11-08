@@ -3,6 +3,8 @@ const title = ref('FULL-CYCLE EVENT AGENCY')
 </script>
 
 <template>
+  <HomePageHeader />
+
   <HomePageTitle :title />
 
   <HomePageLinks />

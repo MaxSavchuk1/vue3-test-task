@@ -13,14 +13,10 @@ const { x, y } = useMouse({ touch: false })
 const { width, height } = useWindowSize()
 
 watch([x, y], () => {
-  // console.log('x.value', x.value)
-  // console.log('y.value', y.value)
   titleRef.value!.style.left = width.value / 2 + x.value / 50 + 'px'
   titleRef.value!.style.top = height.value / 2 + y.value / 50 + 'px'
 })
 watch([width, height], () => {
-  // console.log('width.value', width.value)
-  // console.log('height.value', height.value)
   titleRef.value!.style.left = width.value / 2 + 'px'
   titleRef.value!.style.top = height.value / 2 + 'px'
 })

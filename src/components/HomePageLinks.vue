@@ -2,9 +2,9 @@
 
 <template>
   <div class="links">
-    <router-link to="/" class="link-left">where?</router-link>
-    <router-link to="/" class="link-bottom">who?</router-link>
-    <router-link to="/" class="link-right">what?</router-link>
+    <router-link to="/test" class="link-left">where?</router-link>
+    <router-link to="/test" class="link-bottom">who?</router-link>
+    <router-link to="/test" class="link-right">what?</router-link>
   </div>
 </template>
 

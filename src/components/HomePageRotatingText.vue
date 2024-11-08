@@ -3,13 +3,17 @@ type Props = {
   title: string
 }
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
   title: ''
 })
 
 const { width, height } = useWindowSize()
 
-const angle = ref(0) // angle between the bottom side of the viewport and the diagonal
+const angle = ref(0) // angle between the bottom side and the diagonal of the viewport
+
+const rotatingText = computed(() => {
+  return `${props.title} `.repeat(2)
+})
 
 watchEffect(() => {
   angle.value = Math.floor(
@@ -25,14 +29,14 @@ watchEffect(() => {
   >
     <p class="rotating-text-reversed">
       <span class="rotating-text-ticker-reversed">
-        {{ `${title} `.repeat(2) }}
+        {{ rotatingText }}
       </span>
-      <span>{{ `${title} `.repeat(2) }}</span>
+      <span>{{ rotatingText }}</span>
     </p>
 
     <p class="rotating-text">
-      <span class="rotating-text-ticker">{{ `${title} `.repeat(2) }}</span>
-      <span>{{ `${title}`.repeat(2) }}</span>
+      <span class="rotating-text-ticker">{{ rotatingText }}</span>
+      <span>{{ rotatingText }}</span>
     </p>
   </div>
 </template>
@@ -50,18 +54,17 @@ watchEffect(() => {
 .rotating-text,
 .rotating-text-reversed {
   @apply text-[28px] sm:text-[42px] xl:text-[52px] italic text-transparent absolute;
-  -webkit-text-stroke: 1px rgb(var(--color-dark-gray));
-  /* -webkit-text-stroke: 1px rgb(var(--color-gray)); */
+  -webkit-text-stroke: 1px rgb(var(--color-gray));
   display: flex;
 }
 
 .rotating-text {
-  @apply mt-10 sm:mt-16 xl:mt-20;
+  @apply mt-10 sm:mt-16 xl:mt-20 -ml-[1200px];
   animation: marquee 30s linear infinite;
 }
 
 .rotating-text-reversed {
-  @apply mb-10 sm:mb-16 xl:mb-20 right-0;
+  @apply mb-10 sm:mb-16 xl:mb-20 right-0 -mr-[1200px];
   animation: marquee-reversed 30s linear infinite;
 }
 
@@ -79,7 +82,7 @@ watchEffect(() => {
 
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);

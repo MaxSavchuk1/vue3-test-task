@@ -7,8 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    AppHeader: typeof import('./components/AppHeader.vue')['default']
-    Header: typeof import('./components/Header.vue')['default']
+    HomePageHeader: typeof import('./components/HomePageHeader.vue')['default']
     HomePageLinks: typeof import('./components/HomePageLinks.vue')['default']
     HomePageRotatingText: typeof import('./components/HomePageRotatingText.vue')['default']
     HomePageTitle: typeof import('./components/HomePageTitle.vue')['default']
@@ -16,7 +15,6 @@ declare module 'vue' {
     MainLogo: typeof import('./components/icons/MainLogo.vue')['default']
     MainLogoFilled: typeof import('./components/icons/MainLogoFilled.vue')['default']
     MenuButton: typeof import('./components/icons/MenuButton.vue')['default']
-    RotatingText: typeof import('./components/RotatingText.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

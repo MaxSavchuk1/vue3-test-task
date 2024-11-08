@@ -17,5 +17,6 @@ declare module 'vue' {
     MenuButton: typeof import('./components/icons/MenuButton.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ShowReel: typeof import('./components/icons/ShowReel.vue')['default']
   }
 }

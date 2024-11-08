@@ -4,7 +4,7 @@
   <div class="header">
     <LangSwitch />
 
-    <div class="mx-auto relative w-12 xs:w-16 xl:w-20 h-full">
+    <div class="mx-auto relative w-12 xs:w-16 xl:w-20 h-full -mt-5 xl:-mt-7">
       <MainLogo class="header-logo" />
       <MainLogoFilled class="header-logo-filled" />
     </div>
@@ -20,7 +20,7 @@
 
 .header-logo,
 .header-logo-filled {
-  @apply absolute top-0 mt-2 xs:mt-0;
+  @apply absolute top-0;
 }
 
 .header-logo {

@@ -14,6 +14,7 @@ declare module 'vue' {
     HomePageTitle: typeof import('./components/HomePageTitle.vue')['default']
     LangSwitch: typeof import('./components/LangSwitch.vue')['default']
     MainLogo: typeof import('./components/icons/MainLogo.vue')['default']
+    MainLogoFilled: typeof import('./components/icons/MainLogoFilled.vue')['default']
     MenuButton: typeof import('./components/icons/MenuButton.vue')['default']
     RotatingText: typeof import('./components/RotatingText.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

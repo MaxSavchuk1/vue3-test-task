@@ -6,10 +6,23 @@ type Props = {
 withDefaults(defineProps<Props>(), {
   title: ''
 })
+
+const { width, height } = useWindowSize()
+
+const angle = ref(0) // angle between the bottom side of the viewport and the diagonal
+
+watchEffect(() => {
+  angle.value = Math.floor(
+    (Math.atan(height.value / width.value) * 180) / Math.PI
+  )
+})
 </script>
 
 <template>
-  <div class="rotating-text-container">
+  <div
+    class="rotating-text-container"
+    :style="{ transform: `rotate(-${angle}deg)` }"
+  >
     <p class="rotating-text-reversed">
       <span class="rotating-text-ticker-reversed">
         {{ `${title} `.repeat(2) }}
@@ -26,19 +39,12 @@ withDefaults(defineProps<Props>(), {
 
 <style lang="postcss" scoped>
 .rotating-text-container {
-  @apply absolute -z-10 h-36 overflow-hidden translate-y-1/2;
+  @apply absolute -z-10 h-0;
   white-space: nowrap;
   display: flex;
   align-items: center;
-  width: 2500px;
-  left: -10%;
-  right: 0;
-  bottom: 50%;
-  /* top: 10%; */
-  /* transform-origin: bottom; */
-
-  /* transform: rotate(-45deg) translate(50%, -50%); */
-  transform: rotate(-45deg);
+  left: 50%;
+  top: 50%;
 }
 
 .rotating-text,
